@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
 import com.smarthost.rooms.model.OccupancyResponse;
 import com.smarthost.rooms.model.OccupancyStats;
 import com.smarthost.rooms.service.OccupancyService;
 
+@Component
 public class OccupancyDelegate {
 
 	private final OccupancyService occupancyService;
